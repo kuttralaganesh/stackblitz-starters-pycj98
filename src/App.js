@@ -23,10 +23,7 @@ export default function App() {
     event.preventDefault();
 
     const age = arr.filter((item) => {
-      try{
-        const age = select === item.name ? setAge(item.age) : throw new Error();
-      }
-      
+      const age = select === item.name ? setAge(item.age) : '';
     });
   };
 
